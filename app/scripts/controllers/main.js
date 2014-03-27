@@ -13,7 +13,7 @@ angular.module('assembleApp')
           latitude: -37.8167,
           longitude: 144.9667
       },
-      zoom: 8
+      zoom: 15,
       draggable: true
     };
   });
