@@ -18,4 +18,25 @@ angular.module('assembleApp')
       zoom: 15,
       draggable: true
     };
-  });
+
+    $scope.people = [
+      {
+        position: {
+          latitude: -37.816256,
+          longitude: 144.960929
+        }
+      },
+      {
+        position: {
+          latitude: -37.815896,
+          longitude: 144.971476
+        }
+      },
+      {
+        position: {
+          latitude: -37.8150647,
+          longitude: 144.9598185
+        }
+      }
+    ]
+});
