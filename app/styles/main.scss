@@ -1,5 +1,12 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+$grid-gutter-width: 0;
+
 @import 'sass-bootstrap/lib/bootstrap';
 
-.angular-google-map-container { height: 400px; }
+html, body, .container-fluid, .row-fluid, .col-xs-12 {
+  position: relative;
+  height: 100%;
+}
+
+.angular-google-map-container { height:100%; width:100%; position:absolute; top:0; left:0; }
