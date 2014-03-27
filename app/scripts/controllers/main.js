@@ -14,5 +14,6 @@ angular.module('assembleApp')
           longitude: 144.9667
       },
       zoom: 8
+      draggable: true
     };
   });
