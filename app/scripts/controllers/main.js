@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('assembleApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $interval) {
+    $interval(function () {
+      for (var i = 0; i < $scope.people.length; i++) {
+        var random = Math.floor(Math.random()*11) / 100;
+        $scope.people[i].position.latitude = $scope.people[i].position.latitude - random;
+        $scope.people[i].position.longitude = $scope.people[i].position.longitude + random;
+      }
+    }, 1000);
 
     $scope.map = {
       center: {
