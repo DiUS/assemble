@@ -28,7 +28,6 @@ angular.module('assembleApp')
     };
 
     $scope.$watch('search.name', function() {
-      debugger;
       $scope.currentPerson = _.find($scope.people, function(person) { return person.name == $scope.search.name; } ) || $scope.currentPerson;
     });
 

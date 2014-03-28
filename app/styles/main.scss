@@ -24,6 +24,40 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
   transition: bottom cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
 }
 
+.autocomplete {
+  .form-control {
+    font-size: 20px;
+    line-height: 27px;
+    border-radius: 0;
+    height: 44px;
+  }
+
+  ul {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    list-style: none;
+    padding: 0 !important;
+
+    li {
+      padding: 10px !important;
+      height: 70px;
+      border-bottom: 1px solid #ccc;
+      font-size: 20px;
+
+      &.active {
+        background-color: #eee;
+      }
+
+      .highlight {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 .detail.show {
   bottom: 0;
 }
