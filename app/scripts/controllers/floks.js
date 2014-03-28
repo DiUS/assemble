@@ -10,7 +10,8 @@ angular.module('assembleApp')
           latitude: -37.8150495,
           longitude: 144.964374
         },
-        date: "2014-03-24T08:30:00"
+        date: "2014-03-24T08:30:00",
+        attendees: ['Cam Hine', 'Aaron Triantafylidis']
       },
       {
         description: "DiUS Hack Day",
