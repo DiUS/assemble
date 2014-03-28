@@ -28,7 +28,13 @@ angular.module('assembleApp')
     };
 
     $scope.$watch('search.name', function() {
+      if ($scope.currentPerson !== null) {
+        $scope.currentPerson.icon = 'images/flock_marker.png';  
+      }
+
       $scope.currentPerson = _.find($scope.people, function(person) { return person.name == $scope.search.name; } ) || $scope.currentPerson;
+
+      $scope.currentPerson.icon = 'images/flock_selected.png';
     });
 
     $scope.$watch('people', function () {
@@ -90,7 +96,12 @@ angular.module('assembleApp')
 
     for (var i = 0; i < $scope.people.length; i++) {
       $scope.people[i].showPerson = function () {
+        if ($scope.currentPerson !== null) {
+          $scope.currentPerson.icon = 'images/flock_marker.png';  
+        }
+        
         $scope.currentPerson = this.model;
+        $scope.currentPerson.icon = 'images/flock_selected.png';
         $scope.$digest();
       }
     };
