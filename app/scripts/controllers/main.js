@@ -16,6 +16,7 @@ angular.module('assembleApp')
     }, 2000);
 
     $scope.currentPerson = null;
+    $scope.search = {name: null} ;
 
     $scope.map = {
       center: {
@@ -25,6 +26,11 @@ angular.module('assembleApp')
       zoom: 15,
       draggable: true
     };
+
+    $scope.$watch('search.name', function() {
+      debugger;
+      $scope.currentPerson = _.find($scope.people, function(person) { return person.name == $scope.search.name; } ) || $scope.currentPerson;
+    });
 
     $scope.$watch('people', function () {
       $scope.peopleNames = _.map($scope.people, function(person) { return person.name; });
