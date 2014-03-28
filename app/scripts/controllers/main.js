@@ -2,13 +2,17 @@
 
 angular.module('assembleApp')
   .controller('MainCtrl', function ($scope, $interval) {
+
     $interval(function () {
       for (var i = 0; i < $scope.people.length; i++) {
-        var random = Math.floor(Math.random()*11) / 100;
+        var random = (Math.floor(Math.random() * 201) - 100) / Math.pow(10, 5);
         $scope.people[i].position.latitude = $scope.people[i].position.latitude - random;
         $scope.people[i].position.longitude = $scope.people[i].position.longitude + random;
+
+        console.log($scope.people[i].position.latitude);
+        console.log($scope.people[i].position.longitude);
       }
-    }, 1000);
+    }, 5000);
 
     $scope.map = {
       center: {
