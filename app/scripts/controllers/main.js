@@ -8,15 +8,10 @@ angular.module('assembleApp')
         var random = (Math.floor(Math.random() * 201) - 100) / Math.pow(10, 5);
         $scope.people[i].position.latitude = $scope.people[i].position.latitude - random;
         $scope.people[i].position.longitude = $scope.people[i].position.longitude + random;
-
-        console.log($scope.people[i].position.latitude);
-        console.log($scope.people[i].position.longitude);
       }
     }, 5000);
 
-    // $scope.showPerson = function () {
-    //   debugger;
-    // };
+    $scope.currentPerson = null;
 
     $scope.map = {
       center: {
@@ -52,5 +47,12 @@ angular.module('assembleApp')
         },
         icon: 'images/flock_marker.png'
       }
-    ]
+    ];
+
+    for (var i = 0; i < $scope.people.length; i++) {
+      $scope.people[i].showPerson = function () {
+        $scope.currentPerson = this.model;
+        $scope.$digest();
+      }
+    }
 });

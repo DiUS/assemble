@@ -15,8 +15,15 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
 .detail {
   position: absolute;
   width: 100%;
-  bottom: 0;
   left: 0;
   height: 100px;
   background-color: white;
+  padding: 10px;
+  box-shadow: 0px 2px 13px black;
+  bottom: -100px;
+  transition: bottom cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+}
+
+.detail.show {
+  bottom: 0;
 }
