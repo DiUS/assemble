@@ -13,7 +13,7 @@ angular.module('assembleApp')
         $scope.people[i].position.latitude = $scope.people[i].position.latitude - random;
         $scope.people[i].position.longitude = $scope.people[i].position.longitude + random;
       }
-    }, 5000);
+    }, 2000);
 
     $scope.currentPerson = null;
 
