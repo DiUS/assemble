@@ -3,6 +3,14 @@
 angular.module('assembleApp')
   .controller('FloksCtrl', function ($scope) {
 
+    $scope.people = [
+      { name: 'Cam Hine', distance: '2 kilometres' },
+      { name: 'Aaron Triantafylidis', distance: '2 kilometres' },
+      { name: 'Nuzakat Ali', distance: '1.4 kilometres' },
+      { name: 'Amir Ansari', distance: '200 metres' },
+      { name: 'Marc Phoa', distance: '800 metres' }
+    ];
+
     $scope.floks = [
       {
         description: "Coffee at de'Alleyway",

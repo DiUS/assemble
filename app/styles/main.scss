@@ -20,6 +20,14 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
     position: relative;
     padding: 20px 20px 20px 10px;
 
+    &.active {
+      border-radius: 0;
+      background-color: #998675;
+      border: 0;
+      font-size: 24px;
+      padding: 5px 15px;
+    }
+
     img {
       margin-right: 10px;
     }
@@ -30,6 +38,12 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
       top: 30px;
       right: 10px;
       color: #998675;
+    }
+
+    button {
+      position: absolute;
+      top: 25px;
+      right: 10px;
     }
   }
 }
