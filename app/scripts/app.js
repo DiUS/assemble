@@ -5,7 +5,8 @@ angular.module('assembleApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'google-maps'
+  'google-maps',
+  'autocomplete'
 ])
   .config(function ($routeProvider) {
     $routeProvider
