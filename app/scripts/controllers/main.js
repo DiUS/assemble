@@ -26,6 +26,10 @@ angular.module('assembleApp')
       draggable: true
     };
 
+    $scope.$watch('people', function () {
+      $scope.peopleNames = _.map($scope.people, function(person) { return person.name; });
+    });
+
     $scope.people = [
       {
         name: 'Brendan Spinks',
@@ -52,13 +56,13 @@ angular.module('assembleApp')
         icon: 'images/flock_marker.png'
       },
       {
-          name: 'Stephen Bartlett && Travis Dixon',
-          position: {
-            latitude: -37.8150347,
-            longitude: 144.9518185
-          },
-          icon: 'images/flock_group.png',
-          fixed: true
+        name: 'Stephen Bartlett && Travis Dixon',
+        position: {
+          latitude: -37.8150347,
+          longitude: 144.9518185
+        },
+        icon: 'images/flock_group.png',
+        fixed: true
       }
     ];
 
@@ -71,5 +75,5 @@ angular.module('assembleApp')
         $scope.currentPerson = this.model;
         $scope.$digest();
       }
-    }
+    };
 });
