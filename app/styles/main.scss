@@ -16,11 +16,11 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
   position: absolute;
   width: 100%;
   left: 0;
-  height: 100px;
+  height: 70px;
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0px 2px 13px black;
-  bottom: -100px;
+  bottom: -70px;
   transition: bottom cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
 }
 
@@ -48,7 +48,7 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
       font-size: 20px;
 
       &.active {
-        background-color: #eee;
+        background-color: #fef;
       }
 
       .highlight {

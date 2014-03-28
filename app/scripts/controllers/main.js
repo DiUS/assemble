@@ -20,8 +20,8 @@ angular.module('assembleApp')
 
     $scope.map = {
       center: {
-          latitude: -37.8167,
-          longitude: 144.9667
+        latitude: -37.816154,
+        longitude: 144.960992
       },
       zoom: 15,
       draggable: true
