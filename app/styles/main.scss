@@ -25,16 +25,28 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
 }
 
 a.floks {
+  height: 44px;
+  width: 25%;
+  padding-top: 12px;
+}
+
+.btn.btn-primary {
+  font-size: 16px;
+  background: #998675;
   border-radius: 0;
   border: none;
-  height: 44px;
-  width: 20%;
-  padding-top: 10px;
+}
+
+.header {
+  z-index: 100; 
+  position: relative; 
+  background-color: #F7931E; 
+  padding: 10px;
 }
 
 .autocomplete {
   float: left;
-  width: 80%;
+  width: 71%;
 
   .form-control {
     font-size: 20px;
