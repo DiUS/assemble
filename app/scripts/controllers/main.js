@@ -28,19 +28,22 @@ angular.module('assembleApp')
         position: {
           latitude: -37.816256,
           longitude: 144.960929
-        }
+        },
+        icon: 'images/flock_marker.png'
       },
       {
         position: {
           latitude: -37.815896,
           longitude: 144.971476
-        }
+        },
+        icon: 'images/flock_marker.png'
       },
       {
         position: {
           latitude: -37.8150647,
           longitude: 144.9598185
-        }
+        },
+        icon: 'images/flock_marker.png'
       }
     ]
 });
