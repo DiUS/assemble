@@ -18,6 +18,10 @@ angular.module('assembleApp', [
         templateUrl: 'views/floks.html',
         controller: 'FloksCtrl'
       })
+      .when('/floks/:id', {
+        templateUrl: 'views/flok.html',
+        controller: 'FlokCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,7 +1,18 @@
 <div class="list-group">
-  <a ng-repeat="flok in floks" href="#" class="list-group-item">
+  <a ng-repeat="flok in floks" href="#/floks/2" class="list-group-item">
+    <img src="/images/flock_group.png" class="pull-left" />
     <h4 class="list-group-item-heading">{{flok.description}}</h4>
-    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <ul class="list-group-item-text list-inline">
+      <li>{{flok.distance}}</li>
+      <li>
+        <ng-pluralize count="flok.attendees.length"
+          when="
+          { '1': 'One person is floking.',
+            'other': '{} people are floking.'
+          }">
+        </ng-pluralize>
+      </li>
+    </ul>
     <i class="fa fa-angle-right pull-right" />
   </a>
 </div>

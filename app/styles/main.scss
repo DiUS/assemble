@@ -18,7 +18,11 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
 .list-group {
   .list-group-item {
     position: relative;
-    padding: 20px;
+    padding: 20px 20px 20px 10px;
+
+    img {
+      margin-right: 10px;
+    }
 
     .fa-angle-right {
       font-size: 30px;
@@ -30,6 +34,25 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
   }
 }
 
+.dl-horizontal{
+  dt {
+    width: 80px;
+  }
+  dd {
+    margin-left: 100px;
+  }
+}
+
+.flok {
+  height: 70%;
+}
+
+.flok-detail {
+  border: 10px solid #998675;
+  padding: 10px;
+  padding-top: 0;
+  background-color: white;
+}
 
 .detail {
   position: absolute;
@@ -51,13 +74,13 @@ a.floks {
 
 .btn.btn-primary {
   font-size: 16px;
-  background-color: #F7931E; 
+  background-color: #F7931E;
   border-radius: 0;
   border: none;
 }
 
 .header {
-  z-index: 100; 
+  z-index: 100;
   position: relative;
   background: #998675;
   padding: 10px;
