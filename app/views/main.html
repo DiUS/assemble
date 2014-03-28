@@ -1,5 +1,6 @@
-<div>
+<div style="z-index: 100; position: relative;">
   <autocomplete ng-model="search.name" data="peopleNames" attr-placeholder="Search for people" attr-input-class="form-control"></autocomplete>
+  <a class="btn btn-primary pull-right floks" href="/floks">Floks ></a>
 </div>
 
 <div class="row-fluid">
@@ -12,5 +13,5 @@
 
 <div class="detail" ng-class="{show : currentPerson != null}">
   <h3 class="pull-left" style="margin-top: 0;">{{currentPerson.name}}</h3>
-  <button class="btn btn-primary pull-right">Lets Floc</button>
+  <button class="btn btn-primary pull-right">Lets Flok</button>
 </div>
