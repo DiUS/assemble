@@ -49,6 +49,10 @@ angular.module('assembleApp')
       }
     ];
 
+    $scope.options = {
+      disableDefaultUI: true
+    };
+
     for (var i = 0; i < $scope.people.length; i++) {
       $scope.people[i].showPerson = function () {
         $scope.currentPerson = this.model;
