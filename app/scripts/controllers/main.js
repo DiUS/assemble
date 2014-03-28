@@ -34,7 +34,7 @@ angular.module('assembleApp')
       {
         name: 'Brendan Spinks',
         position: {
-          latitude: -37.816256,
+          latitude: -37.813256,
           longitude: 144.960929
         },
         icon: 'images/flock_marker.png'
@@ -42,7 +42,7 @@ angular.module('assembleApp')
       {
         name: 'Marc Phoa',
         position: {
-          latitude: -37.815896,
+          latitude: -37.811896,
           longitude: 144.971476
         },
         icon: 'images/flock_marker.png'
@@ -50,7 +50,7 @@ angular.module('assembleApp')
       {
         name: 'Cam Hine',
         position: {
-          latitude: -37.8150647,
+          latitude: -37.8110647,
           longitude: 144.9598185
         },
         icon: 'images/flock_marker.png'
@@ -62,6 +62,15 @@ angular.module('assembleApp')
           longitude: 144.9518185
         },
         icon: 'images/flock_group.png',
+        fixed: true
+      },
+      {
+        name: 'Aaron Triantafyllidis',
+        position: {
+          latitude: -37.816154,
+          longitude: 144.960992
+        },
+        icon: 'images/flock_marker.png',
         fixed: true
       }
     ];
