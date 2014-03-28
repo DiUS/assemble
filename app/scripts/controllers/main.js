@@ -5,6 +5,10 @@ angular.module('assembleApp')
 
     $interval(function () {
       for (var i = 0; i < $scope.people.length; i++) {
+        if ($scope.people[i].fixed === true) {
+          continue;
+        }
+
         var random = (Math.floor(Math.random() * 201) - 100) / Math.pow(10, 5);
         $scope.people[i].position.latitude = $scope.people[i].position.latitude - random;
         $scope.people[i].position.longitude = $scope.people[i].position.longitude + random;
@@ -46,6 +50,15 @@ angular.module('assembleApp')
           longitude: 144.9598185
         },
         icon: 'images/flock_marker.png'
+      },
+      {
+          name: 'Stephen Bartlett && Travis Dixon',
+          position: {
+            latitude: -37.8150347,
+            longitude: 144.9518185
+          },
+          icon: 'images/flock_group.png',
+          fixed: true
       }
     ];
 
