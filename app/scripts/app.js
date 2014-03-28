@@ -14,6 +14,10 @@ angular.module('assembleApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/floks', {
+        templateUrl: 'views/floks.html',
+        controller: 'FloksCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
