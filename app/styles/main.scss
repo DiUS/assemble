@@ -10,3 +10,13 @@ html, body, .container-fluid, .row-fluid, .col-xs-12 {
 }
 
 .angular-google-map-container { height:100%; width:100%; position:absolute; top:0; left:0; }
+
+
+.detail {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  background-color: white;
+}

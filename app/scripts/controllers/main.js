@@ -14,6 +14,10 @@ angular.module('assembleApp')
       }
     }, 5000);
 
+    // $scope.showPerson = function () {
+    //   debugger;
+    // };
+
     $scope.map = {
       center: {
           latitude: -37.8167,
@@ -25,6 +29,7 @@ angular.module('assembleApp')
 
     $scope.people = [
       {
+        name: 'Brendan Spinks',
         position: {
           latitude: -37.816256,
           longitude: 144.960929
@@ -32,6 +37,7 @@ angular.module('assembleApp')
         icon: 'images/flock_marker.png'
       },
       {
+        name: 'Marc Phoa',
         position: {
           latitude: -37.815896,
           longitude: 144.971476
@@ -39,6 +45,7 @@ angular.module('assembleApp')
         icon: 'images/flock_marker.png'
       },
       {
+        name: 'Cam Hine',
         position: {
           latitude: -37.8150647,
           longitude: 144.9598185
