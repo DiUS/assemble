@@ -70,13 +70,17 @@ angular.module('assembleApp')
           latitude: -37.816154,
           longitude: 144.960992
         },
-        icon: 'images/flock_marker.png',
+        icon: 'images/my_location_animated.gif',
         fixed: true
       }
     ];
 
     $scope.options = {
       disableDefaultUI: true
+    };
+
+    $scope.markerOptions = {
+      draggable: true
     };
 
     for (var i = 0; i < $scope.people.length; i++) {
